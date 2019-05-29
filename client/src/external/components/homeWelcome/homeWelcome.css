@@ -1,0 +1,4 @@
+.rs-accordion-style1 .card .card-header .acdn-title:after{
+    content: '>';
+    font-weight: bold;
+}

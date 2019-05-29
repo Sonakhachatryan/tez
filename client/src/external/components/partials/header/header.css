@@ -1,0 +1,14 @@
+.hidden-menu .rs-header .searce-box,
+.hidden-menu .rs-header .rs-menu > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+.op-1{
+    opacity: 1;
+}
+
+.rs-menu-mobile{
+    height: 0;
+    opacity: 0;
+}

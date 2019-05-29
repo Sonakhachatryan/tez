@@ -1,0 +1,19 @@
+.btn-send{
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #ff3115;
+    margin-top: 15px;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    padding: 0 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+.btn-send:disabled{
+    cursor: not-allowed;
+}

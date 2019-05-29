@@ -1,0 +1,656 @@
+{
+  "contractName": "UsersInterface",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getUserName",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getUserRole",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_userAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getUserPublicKey",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.0;\n\n\ninterface UsersInterface {\n//    function createUser(address _userAddress, bytes32 _userName, string calldata _publicKey, uint8 _role) external returns(bool);\n    function getUserName(address _userAddress) view external  returns(bytes32);\n    function getUserRole(address _userAddress) view external returns(uint8);\n    function getUserPublicKey(address _userAddress) view external returns(string memory);\n}",
+  "sourcePath": "/home/sona/Documents/blockchain/react/contracts/interfaces/UsersInterface.sol",
+  "ast": {
+    "absolutePath": "/home/sona/Documents/blockchain/react/contracts/interfaces/UsersInterface.sol",
+    "exportedSymbols": {
+      "UsersInterface": [
+        4070
+      ]
+    },
+    "id": 4071,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4048,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 4070,
+        "linearizedBaseContracts": [
+          4070
+        ],
+        "name": "UsersInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4055,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4051,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4050,
+                  "name": "_userAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4055,
+                  "src": "210:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4049,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "210:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "209:22:13"
+            },
+            "returnParameters": {
+              "id": 4054,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4053,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4055,
+                  "src": "255:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4052,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "255:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "254:9:13"
+            },
+            "scope": 4070,
+            "src": "189:75:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4062,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserRole",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4058,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4057,
+                  "name": "_userAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4062,
+                  "src": "290:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4056,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "290:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "289:22:13"
+            },
+            "returnParameters": {
+              "id": 4061,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4060,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4062,
+                  "src": "334:5:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 4059,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "334:5:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "333:7:13"
+            },
+            "scope": 4070,
+            "src": "269:72:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4069,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserPublicKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4065,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4064,
+                  "name": "_userAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4069,
+                  "src": "372:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4063,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "372:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "371:22:13"
+            },
+            "returnParameters": {
+              "id": 4068,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4067,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4069,
+                  "src": "416:13:13",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4066,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "416:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "415:15:13"
+            },
+            "scope": 4070,
+            "src": "346:85:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4071,
+        "src": "26:407:13"
+      }
+    ],
+    "src": "0:433:13"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/sona/Documents/blockchain/react/contracts/interfaces/UsersInterface.sol",
+    "exportedSymbols": {
+      "UsersInterface": [
+        4070
+      ]
+    },
+    "id": 4071,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4048,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:13"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 4070,
+        "linearizedBaseContracts": [
+          4070
+        ],
+        "name": "UsersInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4055,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4051,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4050,
+                  "name": "_userAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4055,
+                  "src": "210:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4049,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "210:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "209:22:13"
+            },
+            "returnParameters": {
+              "id": 4054,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4053,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4055,
+                  "src": "255:7:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 4052,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "255:7:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "254:9:13"
+            },
+            "scope": 4070,
+            "src": "189:75:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4062,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserRole",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4058,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4057,
+                  "name": "_userAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4062,
+                  "src": "290:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4056,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "290:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "289:22:13"
+            },
+            "returnParameters": {
+              "id": 4061,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4060,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4062,
+                  "src": "334:5:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 4059,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "334:5:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "333:7:13"
+            },
+            "scope": 4070,
+            "src": "269:72:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 4069,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUserPublicKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4065,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4064,
+                  "name": "_userAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4069,
+                  "src": "372:20:13",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4063,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "372:7:13",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "371:22:13"
+            },
+            "returnParameters": {
+              "id": 4068,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4067,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4069,
+                  "src": "416:13:13",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4066,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "416:6:13",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "415:15:13"
+            },
+            "scope": 4070,
+            "src": "346:85:13",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 4071,
+        "src": "26:407:13"
+      }
+    ],
+    "src": "0:433:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.6",
+  "updatedAt": "2019-05-28T21:47:03.034Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

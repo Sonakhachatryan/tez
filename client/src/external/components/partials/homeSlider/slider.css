@@ -1,0 +1,20 @@
+.dots-group{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+
+.dots-group button{
+    width: 5px;
+    height: 15px;
+    background-color: white;
+    border: 0;
+    padding: 0;
+    margin: 2px;
+}
+
+.dots-group .carousel__dot--selected{
+    background-color: #ff3115;
+}

@@ -1,0 +1,34 @@
+.rs-team .carousel button{
+    position: absolute;
+    top: 45%;
+    border:0;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.rs-team .carousel button:hover{
+    background-color: #ff3115;
+}
+
+.rs-team .carousel button:focus, .carousel button:active{
+    outline: none;
+}
+
+.rs-team .carousel:hover button{
+    visibility: visible;
+}
+
+.rs-team .carousel button[aria-label="next"]{
+    right: -40px;
+}
+.rs-team .carousel button[aria-label="previous"]{
+    left: -40px;
+}
